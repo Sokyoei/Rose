@@ -1,3 +1,4 @@
+#[derive(Debug)]
 struct Person {
     name: String,
     age: i32,
@@ -16,4 +17,5 @@ impl Person {
 fn main() {
     let p = Person::new(String::from("Ahri"), 13);
     p.print_info();
+    println!("p: {:?}", p);
 }

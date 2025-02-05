@@ -4,8 +4,8 @@ use quick_xml::events::Event;
 use quick_xml::reader::Reader;
 
 fn main() {
-    let root = rose::get_project_dir();
-    let xml_file_path = root.join("data").join("Ahri").join("Ahri.xml");
+    let sokyoei_data_dir = rose::get_sokyoei_data_dir();
+    let xml_file_path = sokyoei_data_dir.join("Ahri").join("Ahri.xml");
     let xml_data = read_to_string(xml_file_path).expect("Failed to read file");
 
     let mut reader = Reader::from_str(&xml_data);

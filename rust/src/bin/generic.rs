@@ -1,3 +1,5 @@
+/// Rust 泛型
+
 #[derive(Debug)]
 struct Point<T> {
     x: T,

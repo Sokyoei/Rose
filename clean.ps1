@@ -1,11 +1,13 @@
-$root_cache_paths = @(
-    ".\target"
-)
-foreach ($path in $root_cache_paths) {
-    if (Test-Path $path) {
-        Remove-Item $path -Recurse -Force
-    }
-}
+# $root_cache_paths = @(
+#     ".\target"
+# )
+# foreach ($path in $root_cache_paths) {
+#     if (Test-Path $path) {
+#         Remove-Item $path -Recurse -Force
+#     }
+# }
+
+cargo.exe clean
 
 $recurse_cache_paths = @(
     "*.exe",

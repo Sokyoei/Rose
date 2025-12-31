@@ -10,3 +10,8 @@ tracing = "0.1.44"
 tracing-subscriber = "0.3.18"
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.147"
+utoipa = { version = "5.4.0", features = ["axum_extras"] }
+utoipa-axum = "0.2.0"
+utoipa-swagger-ui = { version = "9.0.2", features = ["axum", "reqwest"] }
+sea-orm = { version = "1.1.19", features = ["runtime-tokio-native-tls", "macros", "sqlx-all"] }
+sea-orm-migration = { version = "1.1.19", features = ["runtime-tokio-native-tls", "sqlx-all"] }

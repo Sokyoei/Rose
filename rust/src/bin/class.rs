@@ -21,5 +21,6 @@ impl Person {
 fn main() {
     let p = Person::new(String::from("Ahri"), 13);
     p.print_info();
+    println!("p.name: {}, p.age: {}", p.name, p.age);
     println!("p: {:?}", p);
 }

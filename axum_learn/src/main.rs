@@ -4,6 +4,18 @@ use axum::{
     Json, Router,
 };
 use serde::{Deserialize, Serialize};
+use utoipa::OpenApi;
+
+/// OpenAPI 文档
+#[derive(OpenApi)]
+struct ApiDoc;
+
+// 本地模块声明
+mod api;
+mod config;
+mod models;
+mod services;
+mod utils;
 
 #[tokio::main]
 async fn main() {

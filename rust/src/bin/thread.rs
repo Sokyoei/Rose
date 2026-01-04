@@ -1,7 +1,6 @@
 /// Rust Thread
 ///
 ///
-
 use std::thread;
 use std::time::Duration;
 

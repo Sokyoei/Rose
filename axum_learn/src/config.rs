@@ -1,6 +1,2 @@
-use sea_orm::DatabaseConnection;
-
-pub struct Settings {
-    pub database_url: String,
-    pub server_port: u16,
-}
+pub mod config;
+pub mod database_manager;

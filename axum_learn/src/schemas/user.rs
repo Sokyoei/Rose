@@ -1,14 +1,22 @@
 use serde::{Deserialize, Serialize};
+use utoipa::ToSchema;
 
-// the input to our `create_user` handler
-#[derive(Deserialize)]
-pub struct CreateUser {
+#[derive(Deserialize, ToSchema)]
+pub struct UserCreate {
     pub username: String,
+    pub email: String,
+    pub hashed_password: String,
 }
 
-// the output to our `create_user` handler
-#[derive(Serialize)]
-pub struct User {
+#[derive(Serialize, ToSchema)]
+pub struct UserResponse {
     pub id: u64,
     pub username: String,
+    pub email: String,
+}
+
+#[derive(Deserialize, ToSchema)]
+pub struct UserUpdate {
+    pub username: String,
+    pub hashed_password: String,
 }

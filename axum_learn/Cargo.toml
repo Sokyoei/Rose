@@ -15,4 +15,5 @@ utoipa-axum = "0.2.0"
 utoipa-swagger-ui = { version = "9.0.2", features = ["axum", "reqwest"] }
 sea-orm = { version = "1.1.19", features = ["runtime-tokio-native-tls", "macros", "sqlx-all"] }
 sea-orm-migration = { version = "1.1.19", features = ["runtime-tokio-native-tls", "sqlx-all"] }
-uuid = "1.19.0"
+uuid = { version = "1.19.0", features = ["v4", "serde"] }
+config = "0.15.19"

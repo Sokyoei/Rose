@@ -14,6 +14,7 @@ struct ApiDoc;
 mod api;
 mod config;
 mod models;
+mod schemas;
 mod services;
 mod utils;
 

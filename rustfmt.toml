@@ -2,4 +2,5 @@ max_width = 120
 tab_spaces = 4
 newline_style = "Unix"
 merge_derives = false
+edition = "2021"
 ignore = ["Sokyoei", "temp"]
